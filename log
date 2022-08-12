@@ -368,3 +368,26 @@ exercises.c:79:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 47c5cc0
+Fri 12 Aug 2022 06:22:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:78:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   78 |   return (nuevaPersona);
+      |          ^
+exercises.c:74:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   74 |   scanf("%s", nuevaPersona.nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:75:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   75 |   scanf("%s", nuevaPersona.rut);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:76:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   76 |   scanf("%d", &nuevaPersona.edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:79:1: error: control reaches end of non-void function [-Werror=return-type]
+   79 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+40cb8a1

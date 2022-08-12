@@ -73,7 +73,7 @@ Persona *crearPersona(char nombre[], char rut[], int edad)
   Persona nuevaPersona;
   scanf("%s", nuevaPersona.nombre);
   scanf("%s", nuevaPersona.rut);
-  scanf("%d", nuevaPersona.edad);
+  scanf("%d", &nuevaPersona.edad);
   
   return (nuevaPersona);
 }
