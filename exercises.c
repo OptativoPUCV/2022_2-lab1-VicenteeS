@@ -13,7 +13,7 @@ y en c almacena el valor de la suma de a más b.
 
 void suma(int a, int b, int *c)
 {
-  
+  c = a + b;
 }
 
 /*
@@ -37,7 +37,10 @@ arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
 
-void sumaNultimos(int a[], int n, int m, int *suma) {}
+void sumaNultimos(int a[], int n, int m, int *suma)
+{
+  
+}
 
 /*
 Ejercicio 3.
