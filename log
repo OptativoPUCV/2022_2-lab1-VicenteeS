@@ -35,3 +35,9 @@ exercises.c:42:7: error: variable ‘arrayCopia’ set but not used [-Werror=unu
 cc1: all warnings being treated as errors
 Compilation failed
 77094b0
+Fri 12 Aug 2022 12:46:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+d05784e

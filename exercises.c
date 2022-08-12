@@ -46,7 +46,7 @@ void sumaNultimos(int a[], int n, int m, int *suma)
     arrayCopia[j] = a[i];
     j++;
   }
-  *suma = sumaN(arrayCopia[], m);
+  *suma = sumaN(arrayCopia, m);
 }
 
 /*
