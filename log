@@ -239,3 +239,13 @@ exercises.c:95:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 5bc33a7
+Fri 12 Aug 2022 01:26:02 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:92:14: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+   92 |   *arreglo = (Vector *) calloc (n , sizeof(Vector));
+      |              ^
+Compilation failed
+d99c0be
