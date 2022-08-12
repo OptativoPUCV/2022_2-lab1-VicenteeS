@@ -93,7 +93,7 @@ Vector *crearVector(int n)
 
   for(int i = 0; i<n; i++)
   {
-    arreglo[i].*datos = 0;
+    arreglo[i].datos = 0;
     arreglo[i].capacidad = 0;
   }
   
