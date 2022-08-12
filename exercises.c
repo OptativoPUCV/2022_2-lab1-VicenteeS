@@ -45,7 +45,7 @@ void sumaNultimos(int a[], int n, int m, int *suma)
   
   while(copiaM > 0)
   {
-    arrayCopia[j] = a[n];
+    arrayCopia[j] = a[n-1];
     
     n--;
     copiaM--;
