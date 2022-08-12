@@ -441,3 +441,28 @@ exercises.c:75:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 47d5318
+Fri 12 Aug 2022 06:28:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:75:41: error: expected ‘)’ before ‘nuevaPersona’
+   75 |   scanf("%s %s %d", nuevaPersona->nombre nuevaPersona->rut &nuevaPersona->edad);
+      |                                         ^~~~~~~~~~~~~
+      |                                         )
+exercises.c:75:14: error: format ‘%s’ expects a matching ‘char *’ argument [-Werror=format=]
+   75 |   scanf("%s %s %d", nuevaPersona->nombre nuevaPersona->rut &nuevaPersona->edad);
+      |             ~^
+      |              |
+      |              char *
+exercises.c:75:17: error: format ‘%d’ expects a matching ‘int *’ argument [-Werror=format=]
+   75 |   scanf("%s %s %d", nuevaPersona->nombre nuevaPersona->rut &nuevaPersona->edad);
+      |                ~^
+      |                 |
+      |                 int *
+exercises.c:75:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   75 |   scanf("%s %s %d", nuevaPersona->nombre nuevaPersona->rut &nuevaPersona->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+772e9bf
