@@ -391,3 +391,25 @@ exercises.c:79:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 40cb8a1
+Fri 12 Aug 2022 06:24:52 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:74:15: error: ‘persona’ undeclared (first use in this function); did you mean ‘Persona’?
+   74 | malloc(sizeof(persona)) ;
+      |               ^~~~~~~
+      |               Persona
+exercises.c:74:15: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:75:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   75 |   scanf("%s", nuevaPersona->nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:76:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   76 |   scanf("%s", nuevaPersona->rut);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:77:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   77 |   scanf("%d", &nuevaPersona->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3f5a1a8
