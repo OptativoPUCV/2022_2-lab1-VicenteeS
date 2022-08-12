@@ -76,7 +76,7 @@ malloc(sizeof(Persona)) ;
   scanf("%s", (*nuevaPersona).rut);
   scanf("%d", &nuevaPersona->edad);
   
-  return (nuevaPersona);
+  return (*nuevaPersona);
 }
 
 /*
