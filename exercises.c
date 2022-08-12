@@ -90,7 +90,7 @@ Vector *crearVector(int n)
 {
   Vector * arreglo = (Vector *) calloc (n , sizeof(Vector));
   
-  return *arreglo; 
+  return &arreglo; 
 }
 
 /*

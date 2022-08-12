@@ -143,3 +143,15 @@ exercises.c:94:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 9dcf0fc
+Fri 12 Aug 2022 01:14:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:93:10: error: returning ‘Vector **’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   93 |   return &arreglo;
+      |          ^~~~~~~~
+exercises.c:93:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+e48bbc6
