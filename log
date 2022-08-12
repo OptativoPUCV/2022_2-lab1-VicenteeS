@@ -225,3 +225,17 @@ Fri 12 Aug 2022 01:21:06 PM UTC:
  tests:  1|6
 total_score: 10/70
 9fdb733
+Fri 12 Aug 2022 01:25:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:94:10: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   94 |   return *arreglo;
+      |          ^~~~~~~~
+exercises.c:95:1: error: control reaches end of non-void function [-Werror=return-type]
+   95 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5bc33a7
