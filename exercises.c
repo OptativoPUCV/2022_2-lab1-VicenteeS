@@ -41,12 +41,12 @@ void sumaNultimos(int a[], int n, int m, int *suma)
 {
   int arrayCopia[m];
   int j=0;
-  for (int i = n-1 ; i>=m ; i--)
+  for (int i = n ; i>m ; i--)
   {
     arrayCopia[j] = a[i];
     j++;
   }
-  *suma = sumaN(arrayCopia, m+1);
+  *suma = sumaN(arrayCopia, m);
 }
 
 /*
@@ -64,7 +64,7 @@ typedef struct {
 
 Persona *crearPersona(char nombre[], char rut[], int edad)
 {
-  
+  //strcpy()
   
   return NULL;
 }
