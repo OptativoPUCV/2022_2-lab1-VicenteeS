@@ -259,3 +259,13 @@ exercises.c:96:15: error: invalid type argument of ‘->’ (have ‘Vector’)
       |               ^~
 Compilation failed
 c9ec356
+Fri 12 Aug 2022 01:28:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:96:16: error: expected identifier before ‘*’ token
+   96 |     arreglo[i].*datos = 0;
+      |                ^
+Compilation failed
+4cbebe4
