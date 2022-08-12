@@ -42,7 +42,6 @@ void sumaNultimos(int a[], int n, int m, int *suma)
   int arrayCopia[m];
   int j=0, copiaM=m;
   
-  
   while(copiaM > 0)
   {
     arrayCopia[j] = a[n];
@@ -50,6 +49,7 @@ void sumaNultimos(int a[], int n, int m, int *suma)
     copiaM--;
     j++;
   }
+  
   *suma = sumaN(arrayCopia, m);
 }
 
@@ -86,7 +86,11 @@ typedef struct {
   int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector *crearVector(int n) { return NULL; }
+Vector *crearVector(int n) 
+{
+  Vector* arreglo = (vector *) calloc (n , sizeof(Vector));
+  return NULL; 
+}
 
 /*
 Ejercicio 5a.

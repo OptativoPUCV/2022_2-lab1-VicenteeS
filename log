@@ -76,3 +76,22 @@ Fri 12 Aug 2022 01:06:57 PM UTC:
  tests:  1|6
 total_score: 10/70
 4f4bd74
+Fri 12 Aug 2022 01:12:08 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:22: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   91 |   Vector* arreglo = (vector *) calloc (n , sizeof(Vector));
+      |                      ^~~~~~
+      |                      Vector
+exercises.c:91:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:91:30: error: expected expression before ‘)’ token
+   91 |   Vector* arreglo = (vector *) calloc (n , sizeof(Vector));
+      |                              ^
+exercises.c:91:11: error: unused variable ‘arreglo’ [-Werror=unused-variable]
+   91 |   Vector* arreglo = (vector *) calloc (n , sizeof(Vector));
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+271d69a
