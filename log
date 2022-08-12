@@ -112,3 +112,14 @@ Fri 12 Aug 2022 01:12:33 PM UTC:
  tests:  1|6
 total_score: 10/70
 d0c2e59
+Fri 12 Aug 2022 01:13:05 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:21: error: initialization of ‘Vector *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   91 |   Vector* arreglo = (int *) calloc (n , sizeof(Vector));
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+969b0de
