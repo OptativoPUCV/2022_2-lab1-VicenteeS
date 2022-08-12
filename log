@@ -21,3 +21,17 @@ Fri 12 Aug 2022 12:33:22 PM UTC:
  tests:  1|6
 total_score: 10/70
 bf93335
+Fri 12 Aug 2022 12:46:16 PM UTC: 
+ exercises.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:49:28: error: expected expression before ‘]’ token
+   49 |   *suma = sumaN(arrayCopia[], m);
+      |                            ^
+exercises.c:42:7: error: variable ‘arrayCopia’ set but not used [-Werror=unused-but-set-variable]
+   42 |   int arrayCopia[m];
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+77094b0

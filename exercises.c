@@ -39,7 +39,14 @@ Utilice la función sumaN.
 
 void sumaNultimos(int a[], int n, int m, int *suma)
 {
-  
+  int arrayCopia[m];
+  int j=0;
+  for (int i = n-1 ;i>=m; i--)
+  {
+    arrayCopia[j] = a[i];
+    j++;
+  }
+  *suma = sumaN(arrayCopia[], m);
 }
 
 /*
@@ -55,7 +62,12 @@ typedef struct {
   int edad;
 } Persona;
 
-Persona *crearPersona(char nombre[], char rut[], int edad) { return NULL; }
+Persona *crearPersona(char nombre[], char rut[], int edad)
+{
+  
+  
+  return NULL;
+}
 
 /*
 Ejercicio 4.
