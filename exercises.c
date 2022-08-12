@@ -50,7 +50,7 @@ void sumaNultimos(int a[], int n, int m, int *suma)
     j++;
   }
   
-  *suma = sumaN(arrayCopia, m+1);
+  *suma = sumaN(arrayCopia, m);
 }
 
 /*
@@ -88,7 +88,8 @@ typedef struct {
 
 Vector *crearVector(int n) 
 {
-  Vector * arreglo = (Vector *) calloc (n , sizeof(Vector));
+  Vector arreglo;
+  arreglo = (Vector *) calloc (n , sizeof(Vector));
   
   return arreglo; 
 }
