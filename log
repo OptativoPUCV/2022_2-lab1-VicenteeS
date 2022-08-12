@@ -299,3 +299,32 @@ Fri 12 Aug 2022 05:55:44 PM UTC:
  tests:  2|5
 total_score: 20/70
 6b7c8ca
+Fri 12 Aug 2022 06:02:41 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:74:3: error: too few arguments to function ‘strcpy’
+   74 |   strcpy()
+      |   ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:74:11: error: expected ‘;’ before ‘return’
+   74 |   strcpy()
+      |           ^
+      |           ;
+   75 | 
+   76 |   return NULL;
+      |   ~~~~~~   
+exercises.c:77:1: error: control reaches end of non-void function [-Werror=return-type]
+   77 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e409f03
