@@ -1858,3 +1858,30 @@ exercises.c:125:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 e60c212
+Sat 13 Aug 2022 11:37:05 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:112:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘arreglo’
+  112 |   arreglo = (Vector*)calloc(n,sizeof(Vector));
+      |   ^~~~~~~
+exercises.c:112:3: error: ‘arreglo’ undeclared (first use in this function)
+exercises.c:112:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘crearPersona’:
+exercises.c:79:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   79 |   scanf("%s", n);
+      |   ^~~~~~~~~~~~~~
+exercises.c:80:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   80 |   scanf("%s", r);
+      |   ^~~~~~~~~~~~~~
+exercises.c:86:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   86 |   scanf("%d", &nuevaP->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:126:1: error: control reaches end of non-void function [-Werror=return-type]
+  126 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6751817
