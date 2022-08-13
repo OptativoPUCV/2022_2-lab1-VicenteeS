@@ -1417,3 +1417,22 @@ exercises.c:78:22: error: ‘nuevaP’ is a pointer; did you mean to use ‘->�
       |                      ->
 Compilation failed
 7c85611
+Sat 13 Aug 2022 04:08:56 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:76:21: error: ‘nuevaP’ is a pointer; did you mean to use ‘->’?
+   76 |   scanf("%s", nuevaP.nombre);
+      |                     ^
+      |                     ->
+exercises.c:77:21: error: ‘nuevaP’ is a pointer; did you mean to use ‘->’?
+   77 |   scanf("%s", nuevaP.rut);
+      |                     ^
+      |                     ->
+exercises.c:78:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   78 |   scanf("%d", &nuevaP->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+19d5fe2
