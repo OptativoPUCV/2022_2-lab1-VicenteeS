@@ -96,7 +96,7 @@ typedef struct {
 
 Vector *crearVector(int n) 
 {
-  Vector *arreglo =  calloc (n,sizeof(Vector *));
+  Vector *arreglo = (Vector*) calloc (n , sizeof(Vector *));
 
   /*for(int i = 0; i<n; i++)
   {
