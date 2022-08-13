@@ -1926,3 +1926,19 @@ Sat 13 Aug 2022 11:41:13 PM UTC:
  tests:  3|4
 total_score: 30/70
 6c9f3c4
+Sat 13 Aug 2022 11:42:39 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:113:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘arreglo’
+  113 |   arreglo = (Vector*)calloc(n,sizeof(Vector));
+      |   ^~~~~~~
+exercises.c:113:3: error: ‘arreglo’ undeclared (first use in this function)
+exercises.c:113:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:127:1: error: control reaches end of non-void function [-Werror=return-type]
+  127 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6fe61c0
