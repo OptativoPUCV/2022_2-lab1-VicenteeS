@@ -1948,3 +1948,13 @@ Sat 13 Aug 2022 11:42:47 PM UTC:
  tests:  3|4
 total_score: 30/70
 2358960
+Sat 13 Aug 2022 11:47:19 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:114:40: error: expected expression before ‘)’ token
+  114 |   arreglo = (Vector*) calloc (n,sizeof());
+      |                                        ^
+Compilation failed
+e5e15a0
