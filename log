@@ -1593,3 +1593,20 @@ exercises.c:80:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 08fdfd4
+Sat 13 Aug 2022 04:15:49 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:77:23: error: expected identifier before ‘*’ token
+   77 |   scanf("%s", nuevaP->*nombre);
+      |                       ^
+exercises.c:79:23: error: expected identifier before ‘*’ token
+   79 |   scanf("%s", nuevaP->*rut);
+      |                       ^
+exercises.c:80:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   80 |   scanf("%d", &nuevaP->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+921bdce
