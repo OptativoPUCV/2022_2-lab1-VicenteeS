@@ -81,7 +81,7 @@ Persona *crearPersona(char nombre[], char rut[], int edad)
 */
   strcpy(nuevaP->nombre, "Ignacio");
   strcpy(nuevaP->rut, "15489XXX-2");  
-  nuevaP->edad = 38
+  nuevaP->edad = 38;
   
 
   //scanf("%d", &nuevaP->edad);
