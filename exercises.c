@@ -109,7 +109,7 @@ typedef struct {
 
 Vector *crearVector(int n) 
 {
-  Vector *arreglo 
+  Vector *arreglo;
   arreglo = (Vector*)calloc(n,sizeof(Vector));
   /*for(int i=0 ; i<n; i++)
     {
