@@ -723,3 +723,32 @@ exercises.c:77:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 ab0f16f
+Sat 13 Aug 2022 03:39:39 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:75:11: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[30]’ [-Werror=format=]
+   75 |   scanf("%c", &p->nombre);
+      |          ~^   ~~~~~~~~~~
+      |           |   |
+      |           |   char (*)[30]
+      |           char *
+exercises.c:76:11: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[11]’ [-Werror=format=]
+   76 |   scanf("%c", &p->rut);
+      |          ~^   ~~~~~~~
+      |           |   |
+      |           |   char (*)[11]
+      |           char *
+exercises.c:75:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   75 |   scanf("%c", &p->nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:76:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   76 |   scanf("%c", &p->rut);
+      |   ^~~~~~~~~~~~~~~~~~~~
+exercises.c:77:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   77 |   scanf("%d", &p->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6cb457f
