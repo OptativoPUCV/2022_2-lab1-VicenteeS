@@ -109,9 +109,8 @@ typedef struct {
 
 Vector *crearVector(int n) 
 {
-  Vector *arreglo;
-  arreglo = NULL;
-  arreglo = (Vector*) calloc (n,sizeof(Vector));
+  //arreglo = NULL;
+  Vector *arreglo = (Vector*) calloc (n,sizeof(Vector));
   //MyObject *my1 = malloc(sizeof(MyObject));
 
   /*for(int i=0 ; i<n; i++)

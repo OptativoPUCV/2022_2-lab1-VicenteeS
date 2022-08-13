@@ -1982,3 +1982,9 @@ Sat 13 Aug 2022 11:55:28 PM UTC:
  tests:  3|4
 total_score: 30/70
 b12634e
+Sat 13 Aug 2022 11:56:46 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  3|4
+total_score: 30/70
+1ebeee0
