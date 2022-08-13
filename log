@@ -1902,3 +1902,21 @@ exercises.c:86:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 c598fa2
+Sat 13 Aug 2022 11:41:06 PM UTC: 
+ exercises.c | 15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:84:20: error: expected ‘;’ before ‘return’
+   84 |   nuevaP->edad = 38
+      |                    ^
+      |                    ;
+......
+   93 |   return (nuevaP);
+      |   ~~~~~~            
+exercises.c:95:1: error: control reaches end of non-void function [-Werror=return-type]
+   95 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+842a881
