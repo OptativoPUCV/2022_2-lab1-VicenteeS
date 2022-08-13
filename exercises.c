@@ -109,7 +109,7 @@ Vector *crearVector(int n)
     arreglo[i].capacidad = 0;
   }
   */
-  return arreglo; 
+  return (arreglo); 
 }
 
 /*
