@@ -111,7 +111,7 @@ Vector *crearVector(int n)
 {
   Vector *arreglo;
   arreglo = NULL;
-  arreglo = (Vector*) malloc (sizeof(Vector)*n);
+  arreglo = (Vector*) calloc (n,sizeof(Vector));
   //MyObject *my1 = malloc(sizeof(MyObject));
 
   /*for(int i=0 ; i<n; i++)
