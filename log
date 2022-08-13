@@ -1998,3 +1998,9 @@ exercises.c:113:49: error: expected expression before ‘Vector’
       |                                                 ^~~~~~
 Compilation failed
 c98ac55
+Sat 13 Aug 2022 11:58:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+712f49a
