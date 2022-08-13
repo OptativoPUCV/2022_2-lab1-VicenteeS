@@ -1381,3 +1381,20 @@ Sat 13 Aug 2022 04:07:53 AM UTC:
  tests:  2|5
 total_score: 20/70
 5645298
+Sat 13 Aug 2022 04:08:33 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:76:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   76 |   scanf("%s", nuevaP[0].nombre);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:77:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   77 |   scanf("%s", nuevaP[0].rut);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:78:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   78 |   scanf("%d", &nuevaP[0].edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9a95cfe
