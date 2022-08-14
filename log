@@ -2564,3 +2564,21 @@ exercises.c:116:4: error: ‘*(Vector **)&v’ is a pointer; did you mean to use
       |    ->
 Compilation failed
 cdae856
+Sun 14 Aug 2022 04:40:33 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:115:4: error: ‘v[0]’ is used uninitialized in this function [-Werror=uninitialized]
+  115 |   v[0]->capacidad = n;
+      |   ~^~~
+exercises.c:116:4: error: ‘v[0]’ is used uninitialized in this function [-Werror=uninitialized]
+  116 |   (*v)->datos= (int *) calloc (n,sizeof(int));
+      |   ~^~~
+exercises.c:148:11: error: ‘v[0]’ is used uninitialized in this function [-Werror=uninitialized]
+  148 |   return (*v);
+      |          ~^~~
+exercises.c:148:11: error: ‘v[0]’ is used uninitialized in this function [-Werror=uninitialized]
+cc1: all warnings being treated as errors
+Compilation failed
+af1f8da
