@@ -124,7 +124,7 @@ int obtenerValor(Vector *v, int i)
     {
       return()
     }*/
-  return (v->valor[i]); 
+  return (v->datos[i]); 
 }
 
 /*
