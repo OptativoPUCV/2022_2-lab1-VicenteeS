@@ -2350,3 +2350,14 @@ exercises.c:114:7: error: invalid type argument of ‘->’ (have ‘Vector’)
       |       ^~
 Compilation failed
 253cc34
+Sun 14 Aug 2022 04:35:28 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:114:18: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+  114 |   v[0].capacidad = n;
+      |   ~~~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+728a24d
