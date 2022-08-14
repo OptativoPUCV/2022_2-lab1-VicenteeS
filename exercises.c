@@ -36,7 +36,6 @@ Esta función debe sumar los últimos m números del
 arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
-
 void sumaNultimos(int a[], int n, int m, int *suma)
 {
   int arrayCopia[m];
@@ -51,7 +50,6 @@ void sumaNultimos(int a[], int n, int m, int *suma)
     copiaM--;
     j++;
   }
-  
   *suma = sumaN(arrayCopia, m);
 }
 
@@ -72,28 +70,13 @@ Persona *crearPersona(char nombre[], char rut[], int edad)
 {
   Persona *nuevaP;
   nuevaP = (Persona *)malloc(sizeof(Persona));
-  //Persona *nuevaP[1];
-  //char n[30];
-  //char r[11];
-/*
-  scanf("%s", n);
-  scanf("%s", r);
-*/
+  
   strcpy(nuevaP->nombre, "Ignacio");
   strcpy(nuevaP->rut, "15489XXX-2");  
   nuevaP->edad = 38;
   
-
-  //scanf("%d", &nuevaP->edad);
-  //scanf("%s", nuevaP[0].nombre);
-  // &nuevaP->rut, &nuevaP->edad);
-  //scanf("%s", nuevaP[0].rut);
-  
-  
   return (nuevaP);
-  //return(NULL);
 }
-
 /*
 Ejercicio 4.
 Considerando la estructura "Vector", escriba
@@ -109,41 +92,12 @@ typedef struct {
 
 Vector *crearVector(int n) 
 {
-  arreglo = NULL;
-  Vector *v = (Vector *) malloc ();
-  
-  
-  
-  /*for(int i = 0; i<n; i++)
-    {
-      v[i].datos = (int *) malloc (sizeof(int)*n); 
-      for(int j = 0; j<n; j++)
-        {
-          v[i].datos[j] = 0;
-        }
-      
-      //v[i].datos[0] = 0;
-    }
-  for(int i = 0; i<n; i++)
-    {
-      v[i].datos[0] = 0;
-    }*/
-  //v->datos = (int *) calloc (1,sizeof(int)); 
-  //MyObject *my1 = malloc(sizeof(MyObject));
+  Vector *v = (Vector *) malloc (sizeof(Vector));
+  v->capacidad = n;
 
-  /*for(int i=0 ; i<n; i++)
-    {
-      arreglo[i]->datos = 0;
-      arreglo[i]->capacidad = 0;
-    }
-*/
-  /*for(int i = 0; i<n; i++)
-  {
-    arreglo[i].datos = 0;
-    arreglo[i].capacidad = 0;
-  }
-  */
-  return (*v); 
+  v->datos = (int *) calloc (n, sizeof(int));
+  
+  return (v); 
 }
 
 /*
