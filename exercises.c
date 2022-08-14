@@ -115,7 +115,7 @@ Vector *crearVector(int n)
     {
       v[i].datos = (int *) calloc (1,sizeof(int)); 
     }*/
-  v->datos = (int *) calloc (n,sizeof(int)); 
+  v->datos = (int *) calloc (1,sizeof(int)); 
   //MyObject *my1 = malloc(sizeof(MyObject));
 
   /*for(int i=0 ; i<n; i++)
