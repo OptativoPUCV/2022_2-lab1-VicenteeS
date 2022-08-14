@@ -111,10 +111,16 @@ Vector *crearVector(int n)
 {
   //arreglo = NULL;
   Vector *v = (Vector*) malloc (sizeof(Vector)*n);
+  
   for(int i = 0; i<n; i++)
     {
-      //v[i].datos = (int *) calloc (n,sizeof(int)); 
-      v[i].datos[0] = 0;
+      v[i].datos = (int *) malloc (sizeof(int)); 
+      for(int j = 0; j<n; j++)
+        {
+          v[i].datos[j] = 0;
+        }
+      
+      //v[i].datos[0] = 0;
     }
   //v->datos = (int *) calloc (1,sizeof(int)); 
   //MyObject *my1 = malloc(sizeof(MyObject));
