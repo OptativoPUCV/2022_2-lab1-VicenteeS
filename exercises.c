@@ -110,7 +110,11 @@ typedef struct {
 Vector *crearVector(int n) 
 {
   //arreglo = NULL;
-  Vector *arreglo = (Vector*) calloc (n,sizeof(Vector*));
+  Vector *v = (Vector*) malloc (sizeof(Vector)*n);
+  for(int i = 0; i<n; i++)
+    {
+      v[i]->datos = (int *) calloc (sizeof(int)); 
+    }
   //MyObject *my1 = malloc(sizeof(MyObject));
 
   /*for(int i=0 ; i<n; i++)
@@ -125,7 +129,7 @@ Vector *crearVector(int n)
     arreglo[i].capacidad = 0;
   }
   */
-  return (arreglo); 
+  return (v[i]->datos); 
 }
 
 /*
