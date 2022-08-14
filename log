@@ -2030,3 +2030,26 @@ exercises.c:133:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 31cf223
+Sun 14 Aug 2022 12:05:15 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:116:28: error: too few arguments to function ‘calloc’
+  116 |       v[i].datos = (int *) calloc (sizeof(int));
+      |                            ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:132:13: error: ‘i’ undeclared (first use in this function)
+  132 |   return (v[i]->datos);
+      |             ^
+exercises.c:132:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:133:1: error: control reaches end of non-void function [-Werror=return-type]
+  133 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+32b3881
