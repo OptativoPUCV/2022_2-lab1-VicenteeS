@@ -2666,3 +2666,9 @@ exercises.c:154:28: error: ‘b’ undeclared (first use in this function)
       |                            ^
 Compilation failed
 ae87767
+Sun 14 Aug 2022 05:14:10 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+d159ee4
