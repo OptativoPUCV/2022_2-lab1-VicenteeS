@@ -2159,3 +2159,13 @@ Sun 14 Aug 2022 12:21:01 AM UTC:
  tests:  3|4
 total_score: 30/70
 ff33992
+Sun 14 Aug 2022 12:26:07 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:116:8: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  116 |       (*v[i]).datos = (int *) calloc (n,sizeof(int));
+      |        ^~~~~
+Compilation failed
+004184a
