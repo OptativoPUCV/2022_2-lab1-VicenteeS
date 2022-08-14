@@ -109,11 +109,9 @@ typedef struct {
 
 Vector *crearVector(int n) 
 {
-  //arreglo = NULL;
-  //Vector *v = (Vector *) malloc ();
-  Vector *v[1];
-  v[0]->capacidad = n;
-  (*v)->datos= (int *) calloc (n,sizeof(int));
+  arreglo = NULL;
+  Vector *v = (Vector *) malloc ();
+  
   
   
   /*for(int i = 0; i<n; i++)

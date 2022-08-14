@@ -2582,3 +2582,29 @@ exercises.c:148:11: error: ‘v[0]’ is used uninitialized in this function [-W
 cc1: all warnings being treated as errors
 Compilation failed
 af1f8da
+Sun 14 Aug 2022 04:40:52 AM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:112:3: error: ‘arreglo’ undeclared (first use in this function)
+  112 |   arreglo = NULL;
+      |   ^~~~~~~
+exercises.c:112:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:113:26: error: too few arguments to function ‘malloc’
+  113 |   Vector *v = (Vector *) malloc ();
+      |                          ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:539:14: note: declared here
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:146:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+  146 |   return (*v);
+      |          ~^~~
+exercises.c:147:1: error: control reaches end of non-void function [-Werror=return-type]
+  147 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c2f0546
