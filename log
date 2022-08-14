@@ -2153,3 +2153,9 @@ exercises.c:116:12: error: expected identifier before ‘*’ token
       |            ^
 Compilation failed
 95d3cc5
+Sun 14 Aug 2022 12:21:01 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+ff33992
