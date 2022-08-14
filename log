@@ -2511,3 +2511,14 @@ exercises.c:116:4: error: ‘*(Vector **)&v’ is a pointer; did you mean to use
       |    ->
 Compilation failed
 a211b0b
+Sun 14 Aug 2022 04:39:11 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:116:5: error: ‘*(Vector **)&v’ is a pointer; did you mean to use ‘->’?
+  116 |   *v->datos= (int *) calloc (n,sizeof(int));
+      |     ^~
+      |     ->
+Compilation failed
+5c10666
