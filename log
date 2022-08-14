@@ -2319,3 +2319,14 @@ exercises.c:114:3: error: invalid type argument of unary ‘*’ (have ‘int’
       |   ^~~~~~~~~~~~~
 Compilation failed
 46babf9
+Sun 14 Aug 2022 04:33:48 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:114:16: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+  114 |   v->capacidad = n;
+      |   ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+b7f011f

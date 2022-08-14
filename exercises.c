@@ -111,7 +111,7 @@ Vector *crearVector(int n)
 {
   //arreglo = NULL;
   Vector *v;
-  *v->capacidad = n;
+  v->capacidad = n;
   v->datos= (int *) calloc (n,sizeof(int));
   
   
