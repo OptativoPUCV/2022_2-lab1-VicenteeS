@@ -2242,3 +2242,13 @@ Sun 14 Aug 2022 04:10:32 AM UTC:
  tests:  3|4
 total_score: 30/70
 22e6037
+Sun 14 Aug 2022 04:11:19 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:117:11: error: invalid type argument of ‘->’ (have ‘Vector’)
+  117 |       v[i]->datos = 0;
+      |           ^~
+Compilation failed
+c1dede8
