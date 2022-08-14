@@ -2201,3 +2201,14 @@ Sun 14 Aug 2022 04:08:11 AM UTC:
  tests:  3|4
 total_score: 30/70
 25f3289
+Sun 14 Aug 2022 04:08:28 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:118:4: error: ‘v’ is a pointer; did you mean to use ‘->’?
+  118 |   v.datos = (int *) calloc (n,sizeof(int));
+      |    ^
+      |    ->
+Compilation failed
+ae0a1ce
