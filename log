@@ -2298,3 +2298,14 @@ exercises.c:115:6: error: expected identifier before ‘*’ token
       |      ^
 Compilation failed
 dab5450
+Sun 14 Aug 2022 04:33:26 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:114:16: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+  114 |   v->capacidad = n;
+      |   ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+fc468e2
