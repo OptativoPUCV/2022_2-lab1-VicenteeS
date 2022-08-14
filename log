@@ -2471,3 +2471,14 @@ exercises.c:148:11: error: ‘v[0]’ is used uninitialized in this function [-W
 cc1: all warnings being treated as errors
 Compilation failed
 5983b9d
+Sun 14 Aug 2022 04:38:43 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:116:7: error: ‘v[0]’ is a pointer; did you mean to use ‘->’?
+  116 |   v[0].datos= (int *) calloc (n,sizeof(int));
+      |       ^
+      |       ->
+Compilation failed
+9381cad
