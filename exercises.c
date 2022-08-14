@@ -112,7 +112,7 @@ Vector *crearVector(int n)
   //arreglo = NULL;
   Vector *v = (Vector*) malloc (sizeof(Vector)*n);
   
-  for(int i = 0; i<n; i++)
+  /*for(int i = 0; i<n; i++)
     {
       v[i].datos = (int *) malloc (sizeof(int)*n); 
       for(int j = 0; j<n; j++)
@@ -121,6 +121,10 @@ Vector *crearVector(int n)
         }
       
       //v[i].datos[0] = 0;
+    }*/
+  for(int i = 0; i<n; i++)
+    {
+      v[i].datos[0] = 0;
     }
   //v->datos = (int *) calloc (1,sizeof(int)); 
   //MyObject *my1 = malloc(sizeof(MyObject));
@@ -145,7 +149,10 @@ Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
-void asignarValor(Vector *v, int i, int valor) {}
+void asignarValor(Vector *v, int i, int valor) 
+{
+  
+}
 
 /*
 Ejercicio 6.
