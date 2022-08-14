@@ -114,7 +114,7 @@ Vector *crearVector(int n)
   
   for(int i = 0; i<n; i++)
     {
-      v[i].datos = (int *) malloc (sizeof(int)); 
+      v[i].datos = (int *) malloc (sizeof(int)*n); 
       for(int j = 0; j<n; j++)
         {
           v[i].datos[j] = 0;
